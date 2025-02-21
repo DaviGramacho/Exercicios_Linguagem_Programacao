@@ -156,4 +156,62 @@ public class Atividade_quatro{
 }
 
 ```
+<h1>Uma revendedora de carros usados paga a seus funcionários vendedores um salário fixo por mês, mais uma comissão também fixa para cada carro vendido e mais 5% do valor das vendas por ele efetuadas. Escrever um algoritmo que leia o número de carros por ele vendidos, o valor total de suas vendas, o salário fixo e o valor que ele recebe por carro vendido. Calcule e escreva o salário final do vendedor.</h1>
+
+
+```
+/* Exercicio 5 */
+import java.util.Scanner;
+public class atividade_Cinco{
+
+     public static void main(String []args){
+        Scanner sc = new Scanner(System.in);
+        
+        double salarioFixo, salarioFinal, comissaoFixa, comissaoTotal ,valorVenda;
+        
+        int carrosVendidos;
+        System.out.println("Qual seu salario fixo: ");
+        salarioFixo = sc.nextDouble();
+        
+        System.out.println("Qual o valor da sua venda: ");
+        valorVenda = sc.nextDouble();
+        
+        System.out.println("Quantidades de carros vendidos: ");
+        carrosVendidos = sc.nextInt();
+        
+        
+        comissaoFixa = 0.05 * valorVenda;
+        comissaoTotal = comissaoFixa * carrosVendidos;
+        salarioFinal = salarioFixo + comissaoTotal;
+        
+        System.out.println("Salario final: " + salarioFinal);
+     }
+}
+
+```
+<h1>6. Escreva um algoritmo para ler uma temperatura em graus Fahrenheit, calcular e escrever o valor correspondente em graus Celsius. Observação: Para testar se a sua resposta está correta saiba que 100°C = 212°F</h1>
+
+```
+/* Exercicio 5 */
+import java.util.Scanner;
+public class atividade_Cinco{
+
+     public static void main(String []args){
+        Scanner sc = new Scanner(System.in);
+        
+        double celsius, fahrenheit, conversor;
+        
+        System.out.println("Temperatura em Fahrenheit: ");
+        fahrenheit = sc.nextDouble();
+        
+        celsius = (5.0 / 9.0) * (fahrenheit - 32);
+        
+        System.out.println("O valor em Graus Celsius: " + celsius);
+     }
+}
+
+```
+
+
+
 
