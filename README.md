@@ -40,6 +40,33 @@ public class Atividade_Um{
 }
 
 ```
+## Teste de Mesa - Exemplo de Execução do Código
+
+### Código:
+
+O algoritmo calcula a idade de uma pessoa em dias, levando em consideração o número de anos, meses e dias fornecidos pelo usuário.
+
+#### Entradas:
+- Idade: 25 anos
+- Mês de nascimento: 3 (março)
+- Dia de nascimento: 15
+
+### Execução Passo a Passo (Teste de Mesa):
+
+| Passo                         | Variáveis                    | Descrição                                             |
+|-------------------------------|------------------------------|-------------------------------------------------------|
+| **1. Inicialização**           | `anoConver`, `mesConver`, `totalDias ` | O código começa com todas as variáveis inicializadas. |
+| **2. Entrada da Idade**        | `idade = 25`                 | O usuário digita a idade como 25 anos.                |
+| **3. Entrada do Mês**          | `mes = 3`                    | O usuário digita o mês de nascimento como 3 (março). |
+| **4. Entrada do Dia**          | `dias = 15`                  | O usuário digita o dia de nascimento como 15.        |
+| **5. Cálculo dos Anos em Dias**| `anoConver = 365 * 25 = 9125` | A idade em anos é convertida para dias (365 dias por ano). |
+| **6. Cálculo dos Meses em Dias**| `mesConver = 30 * 3 = 90`    | O mês de nascimento é convertido para dias (30 dias por mês). |
+| **7. Cálculo do Total de Dias**| `totalDias = 9125 + 90 + 15 = 9230` | A soma dos dias é feita: anos, meses e dias.         |
+| **8. Saída**                   | `totalDias = 9230`           | O programa exibe o total de dias como 9230.          |
+
+
+
+
 
 <h1>2.Escreva um algoritmo para ler o número total de eleitores de um município, o número de votos brancos, nulos e válidos. Calcular e escrever o percentual que cada um representa em relação ao total de eleitores.</h1>
 
