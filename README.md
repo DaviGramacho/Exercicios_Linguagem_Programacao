@@ -1,5 +1,5 @@
-# Exercicios_Desenvolvimento_BD
-17 exercícios da aula de desenvolvimento de banco de dados do dia 19/02/2025
+# Exercícios Linguagem de Programação
+17 Exercícios da aula de desenvolvimento de banco de dados do dia 19/02/2025
 
 <h1>1. Faça um algoritmo que leia a idade de uma pessoa expressa em anos, meses e dias e escreva a idade dessa pessoa expressa apenas em dias. Considerar ano com 365 dias e mês com 30 dias.</h1>
 
