@@ -239,7 +239,9 @@ public class atividade_Cinco{
 
 ```
 
-<h1>Ler um valor e escrever a mensagem É MAIOR QUE 10! se o valor lido for maior que 10, caso contrário escrever NÃO É MAIOR QUE 10! </h1>
+<h1>7. Ler um valor e escrever a mensagem É MAIOR QUE 10! se o valor lido for maior que 10, caso contrário escrever NÃO É MAIOR QUE 10! </h1>
+
+
 ```java
 import java.util.Scanner;
 
@@ -266,6 +268,7 @@ public class Questao7 {
 
 }
 ```
+
 
 <h1>8. Ler um valor e escrever se é positivo ou negativo (considere o valor zero como positivo). </h1>
 
@@ -518,8 +521,114 @@ public class DuracaoJogoXadrez {
 }
 
 ```
-<h1>A jornada de trabalho semanal de um funcionário é de 40 horas. O funcionário que trabalhar mais de 40 horas receberá hora extra, cujo cálculo é o valor da hora regular com um acréscimo de 50%. Escreva um algoritmo que leia o número de horas trabalhadas em um mês, o salário por hora e escreva o salário total do funcionário, que deverá ser acrescido das horas extras, caso tenham sido trabalhadas (considere que o mês possua 4 semanas exatas). </h1>
+<h1>15. A jornada de trabalho semanal de um funcionário é de 40 horas. O funcionário que trabalhar mais de 40 horas receberá hora extra, cujo cálculo é o valor da hora regular com um acréscimo de 50%. Escreva um algoritmo que leia o número de horas trabalhadas em um mês, o salário por hora e escreva o salário total do funcionário, que deverá ser acrescido das horas extras, caso tenham sido trabalhadas (considere que o mês possua 4 semanas exatas). </h1>
 
 ```java
+import java.util.Scanner;
+
+public class CalculoSalario {
+    public static void main(String[] args) {
+        // Criar scanner para leitura de dados
+        Scanner scanner = new Scanner(System.in);
+        
+        // Leitura dos dados
+        System.out.print("Digite o número de horas trabalhadas no mês: ");
+        double horasTrabalhadas = scanner.nextDouble();
+        
+        System.out.print("Digite o valor do salário por hora: ");
+        double salarioPorHora = scanner.nextDouble();
+        
+        // Cálculo do total de horas regulares no mês
+        double horasRegulares = 40 * 4;  // 4 semanas de 40 horas
+        
+        // Cálculo do salário regular (sem horas extras)
+        double salarioRegular = horasRegulares * salarioPorHora;
+        
+        // Cálculo das horas extras, se houver
+        double horasExtras = 0;
+        double salarioExtra = 0;
+        
+        if (horasTrabalhadas > horasRegulares) {
+            horasExtras = horasTrabalhadas - horasRegulares;
+            salarioExtra = horasExtras * salarioPorHora * 1.5;  // 50% de acréscimo
+        }
+        
+        // Cálculo do salário total
+        double salarioTotal = salarioRegular + salarioExtra;
+        
+        // Exibição do resultado
+        System.out.printf("Salário regular: R$ %.2f\n", salarioRegular);
+        System.out.printf("Horas extras: %.0f horas\n", horasExtras);
+        System.out.printf("Salário extra: R$ %.2f\n", salarioExtra);
+        System.out.printf("Salário total: R$ %.2f\n", salarioTotal);
+        
+        // Fechar o scanner
+        scanner.close();
+    }
+}
+
+
+```
+
+<h1>16. Na empresa em que trabalhamos, há tabelas com o gasto de cada mês. Para fechar o balanço do primeiro trimestre, precisamos somar o gasto total. Sabendo que, em janeiro, foram gastos 15 mil reais, em fevereiro, 23 mil reais e, em março, 17 mil reais, faça um programa que calcule e imprima a despesa total no trimestre e a média mensal de gastos.</h1>
+
+```java
+
+public class DespesaTrimestral {
+    public static void main(String[] args) {
+        // Valores dos gastos de cada mês
+        double janeiro = 15000;  // Gasto em janeiro
+        double fevereiro = 23000;  // Gasto em fevereiro
+        double marco = 17000;  // Gasto em março
+        
+        // Cálculo da despesa total no trimestre
+        double despesaTotal = janeiro + fevereiro + marco;
+        
+        // Cálculo da média mensal de gastos
+        double mediaMensal = despesaTotal / 3;
+        
+        // Exibição do resultado
+        System.out.printf("Despesa total no trimestre: R$ %.2f\n", despesaTotal);
+        System.out.printf("Média mensal de gastos: R$ %.2f\n", mediaMensal);
+    }
+}
+
+
+```
+
+
+<h1>17. Programa que leia as notas e calcule a média de LP1 deste semestre, referente a um determinado aluno.</h1>
+
+
+```java
+
+import java.util.Scanner;
+
+public class CalculoMediaLP1 {
+    public static void main(String[] args) {
+        // Criação do scanner para leitura dos dados
+        Scanner scanner = new Scanner(System.in);
+
+        // Leitura das notas
+        System.out.print("Digite a nota da primeira prova: ");
+        double nota1 = scanner.nextDouble();
+
+        System.out.print("Digite a nota da segunda prova: ");
+        double nota2 = scanner.nextDouble();
+
+        System.out.print("Digite a nota do trabalho: ");
+        double trabalho = scanner.nextDouble();
+
+        // Cálculo da média
+        double media = (nota1 + nota2 + trabalho) / 3;
+
+        // Exibição do resultado
+        System.out.printf("A média de LP1 é: %.2f\n", media);
+
+        // Fechar o scanner
+        scanner.close();
+    }
+}
+
 
 ```
