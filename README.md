@@ -160,7 +160,7 @@ public class Atividade_Tres{
 }
 
 ```
-**## Execução Passo a Passo (Teste de Mesa):**
+## Execução Passo a Passo (Teste de Mesa):
 | Passo                         | Variáveis                            | Descrição                                              |
 |-------------------------------|--------------------------------------|--------------------------------------------------------|
 | **1. Inicialização**           | `salario = 0.0`, `reajuste = 0.0`, `novoSalario = 0.0` | O código começa com todas as variáveis inicializadas.  |
