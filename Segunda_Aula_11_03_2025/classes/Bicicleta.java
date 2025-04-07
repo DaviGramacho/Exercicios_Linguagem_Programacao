@@ -1,4 +1,4 @@
-package org.example.Segunda_Aula_11_03_2025;
+package org.example.Exercicios_Linguagem_Programacao.Segunda_Aula_11_03_2025.classes;
 
 public class Bicicleta {
     private String marca;
